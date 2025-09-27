@@ -1,0 +1,208 @@
+/* Footer.css - Footer Component Styles */
+
+/* Add these styles at the beginning for full width */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Main Footer Section */
+.footer-section {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e5e7eb;
+  padding: 40px 15px;
+  margin-top: 0;
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Footer Content Container */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Brand Section */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-name {
+  color:#00254d;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.copyright {
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Footer Links Section */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-link {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #2c5aa0;
+  text-decoration: none;
+}
+
+.separator {
+  color: #d1d5db;
+  font-size: 1rem;
+  font-weight: 400;
+  user-select: none;
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 991.98px) {
+  .footer-section {
+    padding: 35px 10px;
+  }
+  
+  .footer-content {
+    padding: 0 15px;
+  }
+  
+  .brand-name {
+    font-size: 1.2rem;
+  }
+  
+  .footer-link {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small screens (large phones) */
+@media (max-width: 767.98px) {
+  .footer-section {
+    padding: 30px 5px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .footer-brand {
+    justify-content: center;
+  }
+  
+  .brand-name {
+    font-size: 1.15rem;
+  }
+  
+  .copyright {
+    font-size: 0.95rem;
+  }
+  
+  .footer-links {
+    justify-content: center;
+  }
+  
+  .footer-link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 575.98px) {
+  .footer-section {
+    padding: 25px 5px;
+    margin-top: 0;
+  }
+  
+  .footer-content {
+    gap: 15px;
+  }
+  
+  .footer-brand {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .brand-name {
+    font-size: 1.1rem;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+  }
+  
+  .footer-links {
+    gap: 8px;
+  }
+  
+  .footer-link {
+    font-size: 0.85rem;
+  }
+  
+  .separator {
+    font-size: 0.9rem;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 10px;
+  }
+  
+  .separator {
+    display: none;
+  }
+  
+  .footer-link {
+    border-right: 1px solid #d1d5db;
+    padding-right: 10px;
+    margin-right: 4px;
+  }
+  
+  .footer-link:last-child {
+    border-right: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}

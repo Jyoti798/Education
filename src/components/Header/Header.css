@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --brand: #00254d;
+  --hov:#c1a2e6;
+  --brand-light: #a784c3;
+  --muted: #00254d;
+  --accent: #00254d;
+  --success: #10b981;
+  --bg-light: #f8fafc;
+}
+
+
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #2d3748;
+}
+
+/* Header Styles */
+.navbar-brand {
+  /* font-family: 'Playfair Display', serif !important; */
+  font-weight: 700 !important;
+  font-size: 1.5rem !important;
+  color: var(--brand) !important;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(45deg, #88e3ea, #947ad2);
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.logo-icon::before {
+  content: '◐';
+  color: white;
+  font-size: 18px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--muted) !important;
+  font-weight: 400 !important;
+  margin: 0 10px !important;
+  font-size: 0.95rem !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--hov) !important;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.25rem !important;
+  }
+}
